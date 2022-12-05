@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  identityclient:
+    image: ${DOCKER_REGISTRY-}identityclient
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
